@@ -1,0 +1,10 @@
+.footer-container {
+    background-color: rgb(29, 27, 27);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+  }

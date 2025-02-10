@@ -1,0 +1,69 @@
+
+
+body {
+    background-color: black;    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.img-container {
+    width: 20%;           
+    margin-left: 5%;
+    margin-top: 3%;
+    padding: 20px;
+}
+.me-img {
+    width: 100%;
+    margin-top: 3%;
+    height: auto;
+    border-radius: 30px;
+}
+
+
+.introText-container {
+    color: white;
+    height: 170px;
+    margin-top: 8%;
+    width: 45%;
+    margin-left: 5%;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hello-text {
+    text-align: center;
+}
+.name-text {
+    text-align: center;
+}
+.student-text {
+text-align: center;
+}
+
+.welcomeMessage-container {
+    padding: 20px;
+    text-align: center;
+    margin-top: 25%;
+    width: 45%;
+    margin-right: 10%;
+    border-radius: 30px;
+    line-height: 1.5;
+    box-shadow: 1px 5px 5px 2px white;
+}
+.welcome-message {
+    color: white;
+}
+
+.animate__animated.animate__bounce {
+    --animate-duration: 1.5s;
+}
+
+
+
+
