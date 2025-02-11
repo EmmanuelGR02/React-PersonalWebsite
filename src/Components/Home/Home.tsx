@@ -18,15 +18,15 @@ function Home() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    // Update time every second
+    // update time every second
     const interval = setInterval(() => setTime(new Date()), 1000);
 
-    // Clean up interval on component unmount
+    // clean up interval on component unmount
     return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
-    // Fetch user's location and weather data
+    // get user's location and weather data
     const fetchWeather = async () => {
       if (!navigator.geolocation) {
         setError("Geolocation is not supported by your browser.");
