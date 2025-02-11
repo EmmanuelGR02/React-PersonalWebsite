@@ -25,7 +25,7 @@ header {
     border-radius: 8px;
     display: flex;               
     justify-content: center;     
-    width: 100%;                 
+    width: 100%;     
 }
 
 .navbar-brand {
@@ -34,26 +34,54 @@ header {
     color: white;
     margin-right: 2rem;          
 }
-
 .navbar-nav {
     display: flex;             
     gap: 3rem;                   
 }
 
+
+
 .nav-link {
     color: white; 
-    transition: color 0.2s;
+    transition: color 0.3s ease, opacity 0.3s ease;
     text-decoration: none;       
+    position: relative; 
 }
-
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    width: 40px; 
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+.nav-link1::after {
+    background-image: url("/src/assets/Images/home_icon.png");
+}
+.nav-link2::after {
+    background-image: url("/src/assets/Images/about_icon.png");
+} 
+.nav-link3::after {
+    background-image: url("/src/assets/Images/projects_icon.png");
+} 
+.nav-link4::after {
+    background-image: url("/src/assets/Images/contact_icon.png");
+}
 .nav-link:hover {
-    color: #63b3ed; 
+    color: transparent; 
+}
+.nav-link:hover::after {
+    opacity: 1; 
+    transform: translateY(-50%) translateX(5px); 
 }
 
-.nav-link.active {
-    font-weight: bold;
-    color: #63b3ed;
-}
+
 
 .nav-item {
     list-style-type: none;

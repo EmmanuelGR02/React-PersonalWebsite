@@ -16,22 +16,22 @@ const Header: React.FC = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/home">
+                  <Link className="nav-link nav-link1" to="/home">
                     Home
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/about">
+                  <Link className="nav-link nav-link2" to="/about">
                     About
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/projects">
+                  <Link className="nav-link nav-link3" to="/projects">
                     Projects
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/contact">
+                  <Link className="nav-link nav-link4" to="/contact">
                     Contact
                   </Link>
                 </li>
