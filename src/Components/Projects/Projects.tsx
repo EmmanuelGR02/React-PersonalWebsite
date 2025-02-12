@@ -1,7 +1,11 @@
+import Footer from "../../Footer/Footer"
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <>
+      <div>Projects</div>
+      <Footer />
+    </>
   )
 }
 

@@ -1,0 +1,323 @@
+body {
+    background-color: #000;
+    padding-bottom: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
+}
+
+.contactTitle {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+.card {
+    width: 80%;
+    padding: 30px 50px 50px 30px;
+    border: 2px solid white;
+    box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    position: relative;
+}
+  
+.card .row {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid: auto / auto auto;
+    grid-template-columns: repeat(auto-fit,minmax(30%, 1fr));
+    grid-gap: 30px;
+}
+  
+.card .row .col {
+    position: relative;
+    width: 100%;
+    margin: 30px 20px 40px 0;
+    transition: 0.5s;
+}
+  
+.card .row .form-group {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    color: #ffffff;
+}
+  
+.card .row .form-group input, .card .row .form-group textarea {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 24px;
+    padding: 10px 0 10px 20px;
+    border: 2px solid white;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    border-radius: 50px;
+}
+  
+.card .row .form-group label {
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0 0 0 30px;
+    display: block;
+    pointer-events: none;
+}
+  
+.row .col:nth-child(6) {
+    margin-top: 64px;
+}
+  
+.card .row .form-group input:focus, .card .row .form-group textarea:focus {
+    border: 5px solid #ffffff;
+    transition: all 0.5s;
+}
+  
+.card .row input[type="submit"] {
+    border: 2px solid white;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 45px;
+    transition: all 0.4s;
+}
+  
+.card .row input[type="submit"]:hover {
+    border: 5px solid rgba(255, 255, 255, 1);
+    color: #ffffff;
+    transition: all 0.4s;
+}
+  
+@media screen and (max-width: 900px) {
+    .card .row {
+      grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
+    }
+    
+    .card {
+      padding: 20px;
+    }
+    
+    .card h2 {
+      font-size: 34px;
+    }
+    
+    .card .row input[type="submit"] {
+      width: 100%;
+    }
+}
+
+
+
+
+
+
+  
+  /* Begin Right Contact Page */
+.direct-contact-container {
+    max-width: 300px;
+    margin-left: 10%;
+}
+  
+/* Location, Phone, Email Section */
+.contact-list {
+    list-style-type: none;
+    margin-left: -10%;
+    padding-right: 20px;
+}
+  
+.list-item {
+    line-height: 4;
+    color: white;
+}
+  
+.contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: white;
+}
+  
+.place {
+    margin-left: 62px;
+    color: white;
+}
+  
+.phone {
+    margin-left: 56px;
+    color: white;
+}
+  
+.gmail {
+    margin-left: 53px;
+    color: white;
+}
+  
+.contact-text a {
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+  
+.contact-text a:hover {
+    color: darkgray;
+    text-decoration: none;
+}
+  
+  
+/* Social Media Icons */
+.social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+  
+.social-media-list li {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+    
+    /* Ensure li does not block the a tag */
+    text-align: center;
+}
+
+.social-media-list li a {
+    position: relative;  /* Ensure it's clickable */
+    display: block;      /* Make it fill the li */
+    height: 100%;
+    width: 100%;
+}
+
+  
+.social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+}
+  
+.social-media-list li:hover {
+    background-color: #fff; 
+}
+  
+.social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+  
+.social-media-list li:hover a {
+    color: #000;
+}
+  
+  
+hr {
+    border-color: white;
+}
+  
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+    .contact-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .direct-contact-container, .form-horizontal {
+      margin: 0 auto;
+    }  
+    
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 300px;
+    }    
+    .social-media-list li {
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+    }
+    .social-media-list li:after {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+}
+  
+@media screen and (max-width: 569px) {
+  
+    .direct-contact-container, .form-wrapper {
+      float: none;
+      margin: 0 auto;
+    }  
+    .form-control, textarea {
+      
+      margin: 0 auto;
+    }
+   
+    
+    .name, .email, textarea {
+      width: 280px;
+    } 
+    
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 280px;
+    }  
+    .social-media-list {
+      left: 0;
+    }
+    .social-media-list li {
+      height: 55px;
+      width: 55px;
+      line-height: 55px;
+      font-size: 2rem;
+    }
+    .social-media-list li:after {
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+    }
+    
+}
+  
+@media screen and (max-width: 410px) {
+    .send-button {
+      width: 99%;
+    }
+}
+
+

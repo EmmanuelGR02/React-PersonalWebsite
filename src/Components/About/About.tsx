@@ -1,7 +1,11 @@
+import Footer from "../../Footer/Footer"
 
 function About() {
   return (
-    <div>About</div>
+    <>
+      <div>About</div>
+      <Footer />
+    </>
   )
 }
 
