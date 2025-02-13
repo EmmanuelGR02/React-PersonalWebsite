@@ -59,6 +59,7 @@ body {
 
 .card .row .form-group .message-box {
   height: 130px !important;
+  border-radius: 10px;
 }
   
 .card .row .form-group input, .card .row .form-group textarea {
@@ -79,7 +80,7 @@ body {
     line-height: 40px;
     color: #ffffff;
     font-size: 20px;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 15px;
     display: block;
     pointer-events: none;
 }
@@ -94,7 +95,7 @@ body {
 }
   
 .card .row input[type="submit"] {
-    border: 2px solid white;
+    border: 2px solid darkgray;
     padding: 3px;
     height: 100%;
     width: 100%;
@@ -102,7 +103,8 @@ body {
     outline: none;
     background: transparent;
     text-transform: uppercase;
-    color: #ffffff;
+    background-color: white;
+    color: black;
     line-height: 40px;
     font-size: 18px;
     border-radius: 45px;
@@ -110,8 +112,9 @@ body {
 }
   
 .card .row input[type="submit"]:hover {
-    border: 5px solid rgba(255, 255, 255, 1);
-    color: #ffffff;
+    border: 5px solid darkgray;
+    color: black;
+    font-weight: bold;
     transition: all 0.4s;
 }
   

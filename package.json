@@ -14,7 +14,9 @@
     "animate.css": "^4.1.1",
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
     "lucide-react": "^0.475.0",
+    "particles.js": "^2.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-personalwebsite": "file:",
@@ -22,6 +24,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
+    "@types/jquery": "^3.5.32",
+    "@types/node": "^22.13.1",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react": "^4.3.4",

@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Footer from "../../Footer/Footer"
 import "./Contact.css"
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -16,6 +15,7 @@ function Contact() {
       
           <div className="card animate__animated animate__backInUp">
             <h1 className="contactTitle animate__animated animate__backInRight">Contact Me!</h1>
+            <hr></hr>
             <div className="row">
               <div className="col">
                 <div className="form-group">
