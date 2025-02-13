@@ -4,6 +4,10 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.contact {
+  margin-top: 50px;
+}
+
 .contact-wrapper {
     display: flex;
     flex-direction: row;
@@ -52,6 +56,10 @@ body {
     height: 20px;
     color: #ffffff;
 }
+
+.card .row .form-group .message-box {
+  height: 130px !important;
+}
   
 .card .row .form-group input, .card .row .form-group textarea {
     position: absolute;
@@ -59,7 +67,7 @@ body {
     height: 100%;
     background: transparent;
     outline: none;
-    font-size: 24px;
+    font-size: 15px;
     padding: 10px 0 10px 20px;
     border: 2px solid white;
     box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
@@ -70,7 +78,7 @@ body {
 .card .row .form-group label {
     line-height: 40px;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
     margin: 0 0 0 30px;
     display: block;
     pointer-events: none;
@@ -87,7 +95,7 @@ body {
   
 .card .row input[type="submit"] {
     border: 2px solid white;
-    padding: 10px;
+    padding: 3px;
     height: 100%;
     width: 100%;
     cursor: pointer;
@@ -96,8 +104,7 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     line-height: 40px;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 18px;
     border-radius: 45px;
     transition: all 0.4s;
 }
@@ -233,7 +240,7 @@ body {
 }
   
 .social-media-list li:hover {
-    background-color: #fff; 
+    background-color: gray; 
 }
   
 .social-media-list li:hover:after {
@@ -243,9 +250,8 @@ body {
 }
   
 .social-media-list li:hover a {
-    color: #000;
+    color: white;
 }
-  
   
 hr {
     border-color: white;
@@ -319,5 +325,3 @@ hr {
       width: 99%;
     }
 }
-
-
