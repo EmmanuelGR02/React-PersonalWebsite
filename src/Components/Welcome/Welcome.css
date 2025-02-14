@@ -1,38 +1,39 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,100);
 
 #welcome-page {
-    font-family: "Lato";
-    background: #121212;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    -webkit-font-smoothing: antialiased;
-    display: flex;
+  font-family: "Lato";
+  background: #121212;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
   
 #welcome-page h1 {
-    color: white;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 5em;
-    font-weight: 300;
-    letter-spacing: 0.2em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
   
 #welcome-page a {
-    color: white;
-    border: 1px solid white;
-    text-decoration: none;
-    transition: all 200ms ease;
-    padding: 10px 15px;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  color: white;
+  border: 1px solid white;
+  text-decoration: none;
+  transition: all 200ms ease;
+  padding: 10px 15px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
   
 #welcome-page a:hover {
@@ -86,89 +87,138 @@
 }
 
 
-#welcome-page .buttonBox {
-    margin: 0 20px 40px;
-    max-width: 220px;
-    min-width: 150px;
-    flex: 20%;
-    margin-left: 44%;
-    margin-top: 27%;
+#welcome-page {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+  width: 100%; 
+}
+
+#welcome-page .buttonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+  height: 100vh; 
+}
+
+.welcomeButton {
+  transition: transform .5s ease-in-out !important;
+}
+
+.welcomeButton:hover {
+  transform: scale(1.2);
 }
 
 #third {
-    position: relative;
-    display: inline-block;
-    overflow: hidden; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+#welcome-page .buttonBox {
+  max-width: 220px;
+  min-width: 150px;
+  margin: 0 20px 40px;
 }
 
 #third button {
-    width: 100%;
-    height: 80px;
-    position: relative;
-    background: rgba(255, 255, 255, 0.27);
-    text-transform: uppercase;
-    color: white;
-    font-weight: 300;
-    letter-spacing: 1px;
-    border: none;
-    font-size: 15px;
-    outline: none;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    cursor: pointer;
-    z-index: 2; 
+  width: 100%;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.27);
+  text-transform: uppercase;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border: none;
+  font-size: 15px;
+  outline: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  cursor: pointer;
+  z-index: 2;
 }
 
+
 #third .border {
-    position: absolute; 
-    background: white;
-    width: 100%;
-    height: 1px;
-    transition: transform .6s ease;
+  position: absolute; 
+  background: white;
+  width: 100%;
+  height: 1px;
+  transition: transform .6s ease;
 }
 
 #third .border:nth-of-type(1) {
-    top: 0;
-    left: 0;
-    border-top: 1px solid white;
+  top: 0;
+  left: 0;
+  border-top: 1px solid white;
 }
 
 #third .border:nth-of-type(2) {
-    bottom: 0;
-    left: 0;
-    border-bottom: 1px solid white;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid white;
 }
 
 #third .border:nth-of-type(3) {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 1px;
-    border-left: 1px solid white;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  border-left: 1px solid white;
 }
 
 #third .border:nth-of-type(4) {
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 1px;
-    border-right: 1px solid white;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  border-right: 1px solid white;
 }
 
 #third:hover .border:nth-of-type(1) {
-    transform: translate(0, 3880%);
+    transform: translate(0, 5000%);
 }
 
 #third:hover .border:nth-of-type(2) {
-    transform: translate(0, -3880%);
+    transform: translate(0, -5000%);
 }
 
 #third:hover .border:nth-of-type(3) {
-    transform: translate(9980%, 0);
+    transform: translate(11000%, 0);
 }
 
 #third:hover .border:nth-of-type(4) {
-    transform: translate(-10050%, 0);
+    transform: translate(-11000%, 0);
 }
+
+
+@media screen and (max-width: 480px) {
+  #welcome-page h1 {
+    font-size: 30px;
+    margin-top: -15%;
+  }
+  .buttonDiv {
+    margin-top: -10%;
+  }
+  #third button {
+    font-size: 10px;
+    border: 2px solid white;
+    height: 55px;
+  }
+  #third .border {
+    width: 0px;
+  } 
+}
+@media screen and (min-width: 481px) {
+  #welcome-page h1{
+    font-size: 5em; 
+  }
+}
+
+
+/* title and button style for smaller screens */
+
 
 #stars {
   width: 1px;

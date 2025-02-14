@@ -21,12 +21,14 @@ export default function Welcome() {
           <div id="particles-js"></div>
         </div>
 
-        <div id="third" className="buttonBox">
-        <button onClick={() => navigate("/home")}>Continue to website</button>
-          <div className="border"></div>
-          <div className="border"></div>
-          <div className="border"></div>
-          <div className="border"></div>
+        <div className="buttonDiv">
+          <div id="third" className="buttonBox">
+            <button className="welcomeButton" onClick={() => navigate("/home")}>Continue to website</button>
+            <div className="border"></div>
+            <div className="border"></div>
+            <div className="border"></div>
+            <div className="border"></div>
+          </div>
         </div>
 
       </div>
