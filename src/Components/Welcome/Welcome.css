@@ -35,6 +35,24 @@
   }
 }
 
+.background-animation::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, lightgray 10%, transparent 70%);
+  animation: moveParticles 6s linear infinite;
+}
+
+@keyframes moveParticles {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
 .content {
   position: relative;
   text-align: center;
@@ -50,15 +68,65 @@
 button {
   margin-top: 20px;
   padding: 10px 20px;
-  border: 1px solid whitel;
+  border: 1px solid white;
   font-size: 1rem;
   cursor: pointer;
   background: black;
   color: white;
   border-radius: 5px;
-  transition: background 0.3s ease;
+  transition: all 0.5s;
 }
 
 button:hover {
-  background: lightslategrey;
+  box-shadow: 1px 2px 2px 3px black;
+  transform: scale3d(1.3, 1.1, 1.3);
+}
+
+
+
+.background-animation2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.background-animation2::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(211, 211, 211, 0.15) 10%, transparent 70%);
+  animation: moveParticles1 6s linear infinite;
+}
+
+/* Second rotating gradient in reverse */
+.background-animation2::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(211, 211, 211, 0.1) 10%, transparent 70%);
+  animation: moveParticles2 8s linear infinite;
+}
+
+/* Forward rotation */
+@keyframes moveParticles1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Reverse rotation */
+@keyframes moveParticles2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
 }

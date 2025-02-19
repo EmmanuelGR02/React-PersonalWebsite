@@ -7,6 +7,7 @@ export default function Welcome() {
   return (
     <>
       <div className="welcome-container">
+      <div className="background-animation2"></div>
         <div className="background-animation"></div>
         <div className="content">
           <h1 className="title">Welcome</h1>
