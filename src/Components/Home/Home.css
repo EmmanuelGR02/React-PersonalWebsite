@@ -1,10 +1,8 @@
 
 body {
-    background-color: black;    
+    background: linear-gradient(to right, rgb(88, 87, 87), rgb(58, 57, 57), black);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-
 
 .main-container {
     height: 100%;
@@ -13,8 +11,6 @@ body {
     justify-content: space-between;
     align-items: flex-start;
 }
-
-
 
 .img-container {
     width: 25%;           
